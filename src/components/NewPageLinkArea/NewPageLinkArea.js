@@ -16,7 +16,7 @@ const NewPageLinkArea = () => {
             {new Array(3).fill("").map((elem, i) => (
                 <NewPageLinks 
                 image={
-                    LinkItems[i].node.genericPageAcf?.pageLinkImage.localFile.childImageSharp.gatsbyImageData
+                    LinkItems[i].node.genericPageAcf?.pageLinkImage?.localFile.childImageSharp.gatsbyImageData
                 }
                 link={LinkItems[i].node.genericPageAcf.pagelink}
                 key={i} text={LinkItems[i].node.title} 
