@@ -10,6 +10,9 @@ module.exports = {
     siteUrl: `http://testcoffeeplace.com/`
   },
   plugins: ["gatsby-plugin-styled-components", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp", 'gatsby-plugin-sass',
+  {
+    
+  },
    {
     resolve: `gatsby-source-wordpress`,
     options: {

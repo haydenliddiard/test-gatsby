@@ -9,6 +9,7 @@ import {
   TextBlock, 
   CenterTextBlockWrapper,
 } from "../textareas.styles";
+import "../index.scss";
 
 const IndexPage = ({data}) => {
   const homeData = data.wpPage.Acfhomepage
