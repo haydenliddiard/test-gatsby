@@ -27,7 +27,7 @@ const OverlayMenu = ({menuOpen, callback}) => {
                 
                 )}
             </ul>
-        <div 
+        {/* <div 
             className='closeButton'
             onClick={callback}
             onKeyDown={callback}
@@ -35,17 +35,12 @@ const OverlayMenu = ({menuOpen, callback}) => {
             tabIndex="0"
             >
                 <img src={CloseButton} alt="close-button"/>
-            </div>
+        </div> */}
             <div style={{display: "flex", justifyContent: "center"}}>
             <h4 style={{color: "#fff", width: "60%", textAlign: "center"}}>
                 Hey we love coffee! It's the best way to jump start your day, if your like us you need to try ours. You will be hookeed after one shot.
             </h4>
             </div>
-            {/* <ImageInsert>
-                <h4 className="white">
-                Hey we love coffee! It's the best way to jump start your day, if your like us you need to try ours. You will be hookeed after one shot.
-                </h4>
-            </ImageInsert> */}
             
             <div className="overlay-cta">
             <Link to={menu.ctaoverlay.overlayonelink}>{menu.ctaoverlay.overlayonetext}</Link>

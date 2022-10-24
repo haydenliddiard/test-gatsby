@@ -7,7 +7,10 @@ import {
     DualImageText,
      } from "./NewPageLinks.styles";
      
-const NewPageLinks = ({image, link, text}) => (
+const NewPageLinks = ({image, link, text}) => {
+    // first render link is null
+    console.log(`link${link}`)
+    return (
     <DualImg>
         <StyledImg image={image} alt="cta Image"/>
         <Link to={link}>
@@ -16,7 +19,8 @@ const NewPageLinks = ({image, link, text}) => (
             </DualImageTextWrapper>
         </Link>
     </DualImg>
-)
+    )
+}
 
 export default NewPageLinks
 

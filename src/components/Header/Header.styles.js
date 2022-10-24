@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.header`
   background: #f7f0eb;
-  height: 80px;
+  height: 54px;
   border-bottom: 1px solid #fdf3f3;
   position: fixed;
   width: 100%;

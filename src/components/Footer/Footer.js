@@ -15,7 +15,7 @@ const Footer = () => {
     const {footQuery} = useFooterQuery();
     const socialLinks = Object.values(footQuery.footerMenu).length
     // console.log(footQuery.length)
-    console.log(socialLinks)
+    // console.log(socialLinks)
 
     return (
         <Wrapper style={{backgroundImage: `url(${Background})`}}>
@@ -27,7 +27,7 @@ const Footer = () => {
                 {new Array(3).fill("").map((elem, i) => (
                     <Link to={footQuery.footerMenu[`link${i + 1}`]} key={i}>
                         <StyledImg image={footQuery.footerMenu[`image${i + 1}`].localFile.childImageSharp
-                    .gatsbyImageData} />
+                    .gatsbyImageData} alt={`social${i}`}/>
                     </Link>
                 ))}
             </FooterArea>

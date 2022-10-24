@@ -21,12 +21,4 @@ export const TextBlock = styled.p`
         width: 70%;
     }
 `
-export const DarkHeading = styled.div`
-    text-align: "center", 
-    background-color: "#2d2d2d",
-    display: "inline-block", 
-    padding: "0.25em 0.5em", 
-    color: "#cc9966"
-
-`
 

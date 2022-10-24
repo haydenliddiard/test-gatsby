@@ -6,9 +6,9 @@ import Contributer from "../Contributer/Contributer"
 const ContributerArea = () => {
     const {contributerData: {contributers}} = useContributersQuery();
     // console.log(useContributers.contributerData.contributers);
-    console.log(contributers);
+    // console.log(contributers);
     const ARR = Object.values(contributers) 
-    console.log(ARR);
+    // console.log(ARR);
     return (
         <>
             <h1 style={{textAlign: "center", fontWeight: "inherit"}}>Our Partners</h1>
@@ -19,7 +19,7 @@ const ContributerArea = () => {
                         image={
                             contributers[`contributer${i + 1}image`].localFile.childImageSharp.gatsbyImageData
                         }
-                        text={contributers[`contributer${i + 1}`] || console.log(i)}
+                        text={contributers[`contributer${i + 1}`]}
                     />
                 ))}
             </Wrapper>

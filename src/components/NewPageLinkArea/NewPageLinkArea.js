@@ -20,6 +20,8 @@ const NewPageLinkArea = () => {
                 }
                 link={LinkItems[i].node.genericPageAcf.pagelink}
                 key={i} text={LinkItems[i].node.title} 
+                // dosnt fix
+                alt={`linkitem${i}`}
                 />
             ))}
         </Wrapper>
