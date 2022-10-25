@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql} from 'gatsby'
 import { StyledImg } from '../pagehero.styles'
 import { Seo } from '../components/seo'
-import "../index.scss";
+// import "../index.scss";
 
 const pageTemplate = ({data}) => {
     const imageData = data.wpPage?.featuredImage?.node?.localFile.childImageSharp.gatsbyImageData;

@@ -8,11 +8,10 @@ import {
      } from "./NewPageLinks.styles";
      
 const NewPageLinks = ({image, link, text}) => {
-    // first render link is null
-    console.log(`link${link}`)
+    
     return (
     <DualImg>
-        <StyledImg image={image} alt="cta Image"/>
+        <StyledImg image={image} alt="cta Image" />
         <Link to={link}>
         <DualImageTextWrapper>
                 <DualImageText>{text}</DualImageText>

@@ -5,6 +5,7 @@ import Hamburger from "../Hamburger/Hamburger"
 import OverlayMenu from "../OverlayMenu/OverlayMenu"
 import Footer from "../Footer/Footer"
 import ContributerArea from "../Contributers/ContributersArea/ContributerArea"
+import "../../index.scss";
 
 const Layout = ({children}) => {
     const [menuOpen, setMenuOpen ] = useState(false);
