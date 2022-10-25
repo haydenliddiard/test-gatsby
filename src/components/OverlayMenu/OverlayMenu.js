@@ -1,12 +1,10 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Overlay } from "./OverlayMenu.styles";
-import CloseButton from '../../images/close-menu-white.svg'
-import background from '../../images/beans.jpg'
-import {useMenuQuery} from '../../hooks/useMenuQuery'
-// import { ImageInsert } from "../ImageInsert/ImageInsert";
+import background from '../../images/beans.jpg';
+import {useMenuQuery} from '../../hooks/useMenuQuery';
 
-const OverlayMenu = ({menuOpen, callback}) => {
+const OverlayMenu = ({menuOpen}) => {
     const {menu} = useMenuQuery();
     return (
     <Overlay menuOpen={menuOpen} style={{backgroundImage: `url(${background})`,     backgroundBlendMode: 'multiply'}}>
@@ -14,7 +12,6 @@ const OverlayMenu = ({menuOpen, callback}) => {
         <ul className='overlayMenu'>
                 {menu?.menuItems.nodes.map(item => 
                 (
-                    // should check if item url="#" and omit from menu
                     !item.parentId ? (
                         <li key={item.id}>
                             <Link to={item.url} activeClassName="overlayActive">
@@ -22,20 +19,9 @@ const OverlayMenu = ({menuOpen, callback}) => {
                             </Link>
                         </li>
                     ) : null
-                    
                 )
-                
                 )}
             </ul>
-        {/* <div 
-            className='closeButton'
-            onClick={callback}
-            onKeyDown={callback}
-            role="button"
-            tabIndex="0"
-            >
-                <img src={CloseButton} alt="close-button"/>
-        </div> */}
             <div style={{display: "flex", justifyContent: "center"}}>
             <h4 style={{color: "#fff", width: "60%", textAlign: "center"}}>
                 Hey we love coffee! It's the best way to jump start your day, if your like us you need to try ours. You will be hookeed after one shot.

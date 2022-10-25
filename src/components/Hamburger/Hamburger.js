@@ -4,7 +4,7 @@ import {HamburgerButton} from "./Hamburger.styles"
 
 // changed presentational component to cuntional
 const Hamburger = ({HandleOverlayMenu, menuOpen}) => {
-    // console.log(`${menuOpen} + meun open`)
+
 
     return (
     <HamburgerButton onClick={HandleOverlayMenu} menuOpen={menuOpen}>
@@ -13,10 +13,7 @@ const Hamburger = ({HandleOverlayMenu, menuOpen}) => {
         <div id="three"></div>
         <div id="four"></div>
     </HamburgerButton>
-    )
-    // <HamburgerButton onClick={HandleOverlayMenu}>
-    //     <img src={icon} alt="menu-hamburger" id="menu-hamburger" />
-    // </HamburgerButton>
+    );
 }
 
 export default Hamburger

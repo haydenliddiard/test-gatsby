@@ -9,17 +9,16 @@ import "../../index.scss";
 
 const Layout = ({children}) => {
     const [menuOpen, setMenuOpen ] = useState(false);
-
+    
     // takes prev state and reverse
     const HandleOverlayMenu = () => setMenuOpen(prev => !prev);
-
+    const CloseMenu = () => setMenuOpen(false);
     return (
         <>
-        {/* <GlobalStyles/> */}
         <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} />
-        <OverlayMenu menuOpen={menuOpen} callback={HandleOverlayMenu} />
+        <OverlayMenu menuOpen={menuOpen} />
         <Header/>
-        <main>{children}</main>
+        <main onClick={CloseMenu}>{children}</main>
         <ContributerArea />
         <Footer />
         </>
