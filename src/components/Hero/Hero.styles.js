@@ -26,6 +26,9 @@ export const Wrapper = styled.div`
   img {
     width: 100%;
   }
+  .gatsby-image-wrapper-constrained {
+    max-width: 100%;
+  }
   @media screen and (min-width: 360px) {
     margin-bottom: 1.25em;
   }
@@ -51,12 +54,11 @@ export const HeaderWrapper = styled.div`
 `
 export const MajorMessage = styled.div`
   position: absolute;
-  bottom: -2em;
   display: flex;
   justify-content: initial;
   align-items: center;
   left: 1em;
-  bottom: -0.8em;
+  bottom: -27px;
   width: 100%;
   left: 0;
 
@@ -70,7 +72,6 @@ export const MajorMessage = styled.div`
     font-family: initial;
     z-index: 100;
     position: absolute;
-    bottom: -2.6em;
     margin: 0;
     padding: 0.25em 0;
     width: 100%;
@@ -78,9 +79,7 @@ export const MajorMessage = styled.div`
     line-height: initial !important;  
   }
   @media screen and (min-width: 330px) {
-    p {
-      bottom: -1em;
-    }
+    bottom: -16px;
   }
   @media screen and (min-width: 375px) {
     p {
@@ -89,7 +88,6 @@ export const MajorMessage = styled.div`
   }
   @media screen and (min-width: 820px) {
     p {
-      
       font-size: 1.5rem;
     }
   }
@@ -126,13 +124,16 @@ background-color: #2d2d2d;
 padding: 0.25em; 
 text-align: center; 
 color: #cc9966; 
-margin-top: 2em; 
+margin-top: 3em; 
 font-weight: initial; 
 font-size: 1rem;
 
+@media screen and (min-width: 330px) {
+  margin-top: 31px; 
+}
 @media screen and (min-width: 820px) {
   font-size: 1.25rem;
-  margin-top: 1.8em;
+  margin-top: 38px;
 }
 @media screen and (min-width: 990px) {
   font-weight: 600;

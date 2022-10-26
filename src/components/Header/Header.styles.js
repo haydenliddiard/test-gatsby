@@ -20,8 +20,12 @@ export const Content = styled.div`
 
   img {
     max-width: 80%;
-    width: 200px;
+    width: 150px;
     margin: 0;
     padding: 12px 0 0 0;
+    
+    @media screen and (min-width: 400px) {
+      width: 200px;
+    }
   }
 `;

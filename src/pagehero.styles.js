@@ -8,9 +8,11 @@ export const StyledImg = styled(GatsbyImage)`
   width: 125%;
   margin-bottom: 2em;
   margin-top: 3em;
+  margin-left: -12%;
   
   @media screen and (min-width: 330px) {
     width: 100%;
+    margin-left: 0%;
   }
   @media screen and (min-width: 990px) {
   }

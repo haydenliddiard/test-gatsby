@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HamburgerButton = styled.div`
-position: fixed;
+  position: fixed;
     z-index: 1000000;
     right: 0.5em;
     top: .75em;
@@ -56,6 +56,10 @@ div {
     @media (min-width: 992px) {
       display: none;
     }
+  }
+
+  @media (min-width: 300px) {
+    right: 1.5em;
   }
 
   @media screen and (min-width: 990px) {
