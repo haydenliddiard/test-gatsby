@@ -4,7 +4,7 @@ import { Overlay } from "./OverlayMenu.styles";
 import background from '../../images/beans.jpg';
 import {useMenuQuery} from '../../hooks/useMenuQuery';
 
-const OverlayMenu = ({menuOpen}) => {
+const OverlayMenu = ({menuOpen, callback}) => {
     const {menu} = useMenuQuery();
     return (
     <Overlay menuOpen={menuOpen} style={{backgroundImage: `url(${background})`,     backgroundBlendMode: 'multiply'}}>
@@ -13,7 +13,7 @@ const OverlayMenu = ({menuOpen}) => {
                 {menu?.menuItems.nodes.map(item => 
                 (
                     !item.parentId ? (
-                        <li key={item.id}>
+                        <li key={item.id} onClick={callback}>
                             <Link to={item.url} activeClassName="overlayActive">
                                 {item.label}
                             </Link>

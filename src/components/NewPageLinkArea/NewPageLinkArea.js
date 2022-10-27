@@ -4,9 +4,9 @@ import NewPageLinks from "../NewPageLinks/NewPageLinks"
 import { Wrapper } from "./NewPageLinkArea.styles";
 
 const NewPageLinkArea = () => {
-    const {NewLinks} = useNewPagesQuery()
+    const {NewLinks} = useNewPagesQuery();
     const LinkItems = NewLinks.edges
-    // console.log(NewLinks)
+    console.log(NewLinks)
     // console.log(LinkItems)
 
     return (
@@ -20,8 +20,6 @@ const NewPageLinkArea = () => {
                 }
                 link={LinkItems[i].node.genericPageAcf.pagelink}
                 key={i} text={LinkItems[i].node.title} 
-                // dosnt fix
-                alt={`linkitem${i}`}
                 />
             ))}
         </Wrapper>

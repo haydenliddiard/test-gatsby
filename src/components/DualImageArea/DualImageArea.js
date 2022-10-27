@@ -5,7 +5,7 @@ import DualImage from "../DualImage/DualImage";
 
 const DualImageArea = () => {
     const {dualImg} = useDualImgCtaQuery();
-
+    // console.log("dual image"+dualImg)
     return (
         <Wrapper>
             {new Array(2).fill("").map((elem, i) => (
