@@ -13,8 +13,8 @@ const OverlayMenu = ({menuOpen, callback}) => {
                 {menu?.menuItems.nodes.map(item => 
                 (
                     !item.parentId ? (
-                        <li key={item.id} onClick={callback}>
-                            <Link to={item.url} activeClassName="overlayActive">
+                        <li key={item.id}>
+                            <Link to={item.url} activeClassName="overlayActive" onClick={callback}>
                                 {item.label}
                             </Link>
                         </li>

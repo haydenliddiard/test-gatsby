@@ -129,7 +129,16 @@ font-weight: initial;
 font-size: 1rem;
 
 @media screen and (min-width: 330px) {
-  margin-top: 31px; 
+  margin-top: 42px;
+}
+@media screen and (min-width: 346px) {
+  margin-top: 31px;
+}
+@media screen and (min-width: 360px) {
+  margin-top: 31px;
+}
+@media screen and (min-width: 375px) {
+  margin-top: 33px;
 }
 @media screen and (min-width: 820px) {
   font-size: 1.25rem;

@@ -14,6 +14,7 @@ const NewPageLinkArea = () => {
             <h2 style={{textAlign: "center"}}>Latest News</h2>
         <Wrapper>
             {new Array(3).fill("").map((elem, i) => (
+                
                 <NewPageLinks 
                 image={
                     LinkItems[i].node.genericPageAcf?.pageLinkImage?.localFile.childImageSharp.gatsbyImageData
