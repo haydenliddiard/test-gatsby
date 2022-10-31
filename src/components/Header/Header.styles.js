@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.header`
   background: #f7f0eb;
-  height: 54px;
+  height: 65px;
   border-bottom: 1px solid #fdf3f3;
   position: fixed;
   width: 100%;
@@ -20,7 +20,7 @@ export const Content = styled.div`
 
   img {
     max-width: 80%;
-    width: 150px;
+    width: 200px;
     margin: 0;
     padding: 12px 0 0 0;
     

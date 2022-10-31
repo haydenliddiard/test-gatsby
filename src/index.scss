@@ -17,11 +17,14 @@ main {
 }
 
 .left-aligned-wordpress-block {
-    // margin: 0 5%;
+    margin-bottom: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .block-text {
+        padding-left: 5%;
+    }
     @media screen and (min-width: 920px) {
         .wp-block-column {
             width: 45%;
@@ -56,6 +59,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
+    .block-text {
+        padding-left: 5%;
+    }
     @media screen and (min-width: 920px) {
         .wp-block-column {
             width: 45%;

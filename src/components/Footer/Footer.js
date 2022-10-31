@@ -13,7 +13,7 @@ import FooterLinks from "../FooterLinks/FooterLink";
 const Footer = () => {
 
     const {footQuery} = useFooterQuery();
-    const socialLinks = Object.values(footQuery.footerMenu).length
+    // const socialLinks = Object.values(footQuery.footerMenu).length
     // console.log(footQuery.length)
     // console.log(socialLinks)
 

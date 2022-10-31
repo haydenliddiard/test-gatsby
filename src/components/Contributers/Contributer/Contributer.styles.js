@@ -17,6 +17,7 @@ export const DualImg = styled.div`
   position: relative;
   overflow: initial;
   max-width: 100%;
+  max-width: 250px;
   .gatsby-image-wrapper {
     overflow: initial;
   }

@@ -21,6 +21,7 @@ export const StyledImg = styled(GatsbyImage)`
 export const Wrapper = styled.div`
   position: relative;
   background-color: #cc9966;
+  background-color: #323232;
   margin-bottom: 1em;
   
   img {

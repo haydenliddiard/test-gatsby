@@ -4,7 +4,7 @@ export const HamburgerButton = styled.div`
   position: fixed;
     z-index: 1000000;
     right: 0.5em;
-    top: .75em;
+    top: 1.25em;
     right: 1.5em;
 
 div {
