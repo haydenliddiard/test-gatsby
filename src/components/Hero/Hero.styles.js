@@ -123,6 +123,7 @@ export const MajorMessage = styled.div`
 export const MinorMessage = styled.div`
 background-color: #2d2d2d; 
 padding: 0.25em; 
+padding-top: 0.5em; 
 text-align: center; 
 color: #cc9966; 
 margin-top: 3em; 

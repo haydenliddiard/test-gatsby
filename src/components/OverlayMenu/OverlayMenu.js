@@ -23,7 +23,7 @@ const OverlayMenu = ({menuOpen, callback}) => {
                 )}
             </ul>
             <div style={{display: "flex", justifyContent: "center"}}>
-            <h4 style={{color: "#fff", width: "60%", textAlign: "center"}}>
+            <h4 style={{color: "#fff", width: "80%", textAlign: "center"}}>
                 Hey we love coffee! It's the best way to jump start your day, if your like us you need to try ours. You will be hookeed after one shot.
             </h4>
             </div>

@@ -25,7 +25,7 @@ const IndexPage = ({data}) => {
       </ImageInsert>
     <NewPageLinkArea />
 
-    <CenterTextBlockWrapper >
+    {/* <CenterTextBlockWrapper >
       <TextBlock>
       {homeData.textareaone}
       </TextBlock>
@@ -38,7 +38,7 @@ const IndexPage = ({data}) => {
           fontSize: "1.5em",
           color: "#fff"}}
         >See Our Process</div>
-    </CenterTextBlockWrapper>
+    </CenterTextBlockWrapper> */}
     {/* IMPORTS WORDPRESS PAGE DATA */}
         <div className="worpress-page-container" dangerouslySetInnerHTML={{__html: data.wpPage.content}}/>
       </>
