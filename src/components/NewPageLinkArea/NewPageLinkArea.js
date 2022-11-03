@@ -6,7 +6,7 @@ import { Wrapper } from "./NewPageLinkArea.styles";
 const NewPageLinkArea = () => {
     const {NewLinks} = useNewPagesQuery();
     const LinkItems = NewLinks.edges
-    console.log(NewLinks)
+    // console.log(NewLinks)
     // console.log(LinkItems)
 
     return (

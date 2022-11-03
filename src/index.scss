@@ -87,6 +87,7 @@ main {
 }
 
 .colored-left-block {
+    margin-top: 2em;
     margin-bottom: 2em;
     display: flex;
     flex-direction: column;
@@ -99,6 +100,8 @@ main {
         padding: 0 0 2% 5%;
     }
     @media screen and (min-width: 920px) {
+        background-color: transparent;
+        color: #000;
         .block-text {
             padding-left: 5%;
             padding: 2% 0 0 5%;

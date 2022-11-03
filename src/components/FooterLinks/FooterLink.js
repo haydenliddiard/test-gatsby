@@ -1,25 +1,18 @@
 import React from "react";
+import { Link } from "gatsby";
 import { FooterLinksWrapper } from "./FooterLinks.styles";
+import { useFooterMenuQuery } from "../../hooks/useFooterMenuQuery";
 
 const FooterLinks = () => {
-
+    const {wpMenu: {menuItems}} = useFooterMenuQuery();
+    console.log(menuItems)
     return (
         <FooterLinksWrapper>
-                <div>
-                    <div>Orders</div>
-                    <div>contact</div>
-                    <div>Check</div>
-                </div>
-                <div>
-                    <div>hey</div>
-                    <div>hello</div>
-                    <div>Careers</div>
-                </div>
-                <div>
-                    <div>hey</div>
-                    <div>hello</div>
-                    <div>Careers</div>
-                </div>
+            {menuItems.nodes.map((child, i) => (
+                <Link to={child.uri} key={child.id}>
+                    {child.label}
+                </Link>
+            ))}
         </FooterLinksWrapper>
     )
 }

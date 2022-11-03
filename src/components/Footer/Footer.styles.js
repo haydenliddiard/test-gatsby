@@ -28,6 +28,8 @@ export const FooterArea = styled.div`
         align-items: center;
         max-width: 50px;
         max-height: 50px;
+
+        
         :hover {
             background-color: #835e39;
             background-color: #ad7d55;
@@ -36,6 +38,10 @@ export const FooterArea = styled.div`
         .gatsby-image-wrapper {
             max-height: initial;
             min-height: initial;
+            
+        }
+        &:nth-of-type(1) {
+            height: 55px
         }
     }
 `
