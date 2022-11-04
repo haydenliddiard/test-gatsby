@@ -13,6 +13,7 @@ export const Seo = ({title, description, children}) => {
         <>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} /> 
+        <html lang="en-US" />
         {children}
         </>
     )
