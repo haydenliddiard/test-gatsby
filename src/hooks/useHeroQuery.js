@@ -11,12 +11,12 @@ export const useHeroQuery = () => {
                 minormessage
                 subtextarea
                 heroimage {
-                    localFile {
-                    childImageSharp {
-                    gatsbyImageData(placeholder: TRACED_SVG)
-                    }
+                localFile {
+                childImageSharp {
+                    gatsbyImageData(webpOptions: {quality: 100}, placeholder: BLURRED)
                 }
                 }
+            }
             }
         }
     }

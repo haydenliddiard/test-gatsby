@@ -5,11 +5,7 @@ import DualImageArea from "../components/DualImageArea/DualImageArea";
 import { ImageInsert } from "../components/ImageInsert/ImageInsert";
 import {Seo} from "../components/seo"
 import NewPageLinkArea from "../components/NewPageLinkArea/NewPageLinkArea";
-import { 
-  TextBlock, 
-  CenterTextBlockWrapper,
-} from "../textareas.styles";
-// import "../index.scss";
+
 
 const IndexPage = ({data}) => {
   const homeData = data.wpPage.Acfhomepage
@@ -25,20 +21,7 @@ const IndexPage = ({data}) => {
       </ImageInsert>
     <NewPageLinkArea />
 
-    {/* <CenterTextBlockWrapper >
-      <TextBlock>
-      {homeData.textareaone}
-      </TextBlock>
-        <div
-        style={{
-          textAlign: "center",
-          display: "inline-block",
-          padding: "0.25em 0.5em",
-          backgroundColor: "#cc9966",
-          fontSize: "1.5em",
-          color: "#fff"}}
-        >See Our Process</div>
-    </CenterTextBlockWrapper> */}
+
     {/* IMPORTS WORDPRESS PAGE DATA */}
         <div className="worpress-page-container" dangerouslySetInnerHTML={{__html: data.wpPage.content}}/>
       </>
