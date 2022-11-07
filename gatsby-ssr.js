@@ -20,9 +20,12 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
 //   setHtmlAttributes({ lang: "en" })
 // }
 
-export const wrapPageElement = ({ element, props }) => {
-      return <Layout {...props}>{element}</Layout>;
-    };
+export const wrapPageElement = ({ element, props }) => (
+      <>
+      <GlobalStyles />
+      <Layout {...props}>{element}</Layout>;
+      </>
+    );
 
 export const wrapRootElement = ({ element, props }) => {
       return <Theme {...props}>{element}</Theme>;
