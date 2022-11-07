@@ -5,7 +5,7 @@ import { useFooterMenuQuery } from "../../hooks/useFooterMenuQuery";
 
 const FooterLinks = () => {
     const {wpMenu: {menuItems}} = useFooterMenuQuery();
-    console.log(menuItems)
+    // console.log(menuItems)
     return (
         <FooterLinksWrapper>
             {menuItems.nodes.map((child, i) => (
