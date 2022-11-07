@@ -16,8 +16,8 @@ export const StyledImg = styled(GatsbyImage)`
     width: 55%;
   }
   `
-  // margin-left: -35%;
 
+  
 export const Wrapper = styled.div`
   position: relative;
   background-color: #cc9966;
@@ -62,15 +62,14 @@ export const MajorMessage = styled.div`
   bottom: -27px;
   width: 100%;
   left: 0;
-
   p {
+    font-family: "staatliches";
     font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
     text-transform: none;
     text-align: center;
     text-shadow: 1px 1px 2px rgb(0 0 0), 2px 2px 2px rgb(0 0 0);
-    font-family: initial;
     z-index: 100;
     position: absolute;
     margin: 0;

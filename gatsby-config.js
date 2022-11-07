@@ -20,6 +20,7 @@ module.exports = {
       }
    },
   {
+    // opens file to graphql 
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

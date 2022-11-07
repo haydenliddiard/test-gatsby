@@ -7,7 +7,7 @@ import {
     FooterHeading,
     Wrapper
 } from "./Footer.styles";
-import Background from "../../images/coffee-light-texture.png"
+import Background from "../../images/coffee-light-texture.webp"
 import FooterLinks from "../FooterLinks/FooterLink";
 
 const Footer = () => {
