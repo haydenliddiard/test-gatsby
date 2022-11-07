@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { GatsbyImage } from "gatsby-plugin-image"
+import background from "../../images/coffee-light-texture.webp"
 
 export const StyledImg = styled(GatsbyImage)`
   max-height: 600px;
@@ -23,6 +24,7 @@ export const Wrapper = styled.div`
   background-color: #cc9966;
   background-color: #323232;
   margin-bottom: 1em;
+  background-image: url('${background}');
   
   img {
     width: 100%;
@@ -63,6 +65,7 @@ export const MajorMessage = styled.div`
   width: 100%;
   left: 0;
   p {
+    background-image: url('${background}');
     font-family: "staatliches";
     font-size: 1.2rem;
     font-weight: 100;
@@ -93,15 +96,15 @@ export const MajorMessage = styled.div`
   }
 
   @media screen and (min-width: 990px) {
-    top: 1em;
+    top: 3em;
     p {
       position: initial;
       color: #fff;
       background: transparent;
-      width: 25%;
-      font-size: 2.5rem;
+      width: 28%;
+      font-size: 3rem;
       line-height: .8 !important;
-      margin-left: 2em;
+      margin-left: 1.5em;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -109,7 +112,7 @@ export const MajorMessage = styled.div`
       color: #fff;
       background: transparent;
       line-height: .8;
-      margin-left: 3em;
+      margin-left: 1.75em;
     }
   }
   @media screen and (min-width: 1250px) {

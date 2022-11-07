@@ -2,7 +2,7 @@ import React from "react"
 import {getImage} from "gatsby-plugin-image"
 import { useHeroQuery } from "../../hooks/useHeroQuery"
 import { Wrapper, HeaderWrapper, StyledImg, MinorMessage, MajorMessage} from "./Hero.styles"
-import background from "../../images/coffee-light-texture.webp"
+
 
 const Hero = () => {
     const {
@@ -13,10 +13,10 @@ const Hero = () => {
 
     return (
         <>
-            <Wrapper style={{backgroundImage: `url(${background})`}}>
+            <Wrapper>
                 <HeaderWrapper>
                     <MajorMessage>
-                        <p>{data.herotext}</p>
+                        <p>"{data.herotext}"</p>
                     </MajorMessage>
                 </HeaderWrapper>
                 <StyledImg image={imageData} loading="eager" alt="Hero Image" />
