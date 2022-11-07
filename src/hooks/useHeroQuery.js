@@ -13,7 +13,7 @@ export const useHeroQuery = () => {
                 heroimage {
                 localFile {
                 childImageSharp {
-                    gatsbyImageData(webpOptions: {quality: 100}, width: 900, placeholder: BLURRED)
+                    gatsbyImageData(webpOptions: {quality: 100}, width: 1920, placeholder: BLURRED)
                 }
                 }
             }
