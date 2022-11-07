@@ -65,7 +65,7 @@ export const MajorMessage = styled.div`
   p {
     font-family: "staatliches";
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 100;
     color: #fff;
     text-transform: none;
     text-align: center;

@@ -1,6 +1,8 @@
 @font-face {
     font-family: staatliches;
-    src: url(/fonts/Staatliches-Regular.woff);
+    font-weight: 100;
+    src: local('font-family: ui-monospace'), url(/fonts/Staatliches-Regular.woff) format('woff');
+    font-display: swap;
 }
 main {
     overflow: hidden;
