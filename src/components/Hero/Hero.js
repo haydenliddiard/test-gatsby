@@ -19,7 +19,7 @@ const Hero = () => {
                         <p>{data.herotext}</p>
                     </MajorMessage>
                 </HeaderWrapper>
-                <StyledImg image={imageData} alt="Hero Image" />
+                <StyledImg image={imageData} loading="eager" alt="Hero Image" />
             </Wrapper>
             <MinorMessage>
                 {data.minormessage}
