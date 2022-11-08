@@ -21,27 +21,29 @@ export const FooterArea = styled.div`
         margin: 0 10px;
         padding: 6px 15px;
         border: none;
-        border: 1px solid #835e39;
+        border: 3px solid #333;
         border-radius: 50%;
         background-color: #cc9966;
         display: flex;
         align-items: center;
         max-width: 50px;
         max-height: 50px;
-
+        transition: all .25s;
         
-        :hover {
+        &:hover {
             background-color: #835e39;
-            background-color: #ad7d55;
-            
+            border: 5px solid #333;
         }
         .gatsby-image-wrapper {
             max-height: initial;
             min-height: initial;
             
         }
-        &:nth-of-type(1) {
-            height: 55px
+        &:nth-of-type(2) {
+            padding: 9px;
+        }
+        &:nth-of-type(3) {
+            padding: 9px 10px;
         }
     }
 `

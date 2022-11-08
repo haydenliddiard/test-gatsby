@@ -10,16 +10,16 @@ import "../../index.scss";
 const Layout = ({children}) => {
     const [menuOpen, setMenuOpen ] = useState(false);
     const HandleOverlayMenu = () => setMenuOpen(prev => !prev);
-    // const CloseMenu = () => setMenuOpen(false);
+    const CloseMenu = () => setMenuOpen(false);
     // on main:  Non-interactive elements should not be assigned mouse or keyboard event listeners
     return (
         <>
         <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} />
         <OverlayMenu menuOpen={menuOpen} callback={HandleOverlayMenu}/>
         <Header/>
-        <main 
-        // onClick={CloseMenu}
-        >{children}</main>
+        <div 
+        onClick={CloseMenu}
+        >{children}</div>
         <ContributerArea />
         <Footer />
         </>
