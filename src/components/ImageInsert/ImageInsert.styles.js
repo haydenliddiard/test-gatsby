@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     margin-bottom: 5rem;
     margin-top: 4.5rem;
     text-align: center;
-
+    
     .top-img {
         width: 100px; 
         position: absolute;

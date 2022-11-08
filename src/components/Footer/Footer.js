@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <Wrapper style={{backgroundImage: `url(${Background})`}}>
                 <FooterHeading>
-                    <h3>Hells Yeah We like Coffee!</h3>
+                    <h2>Hells Yeah We like Coffee!</h2>
                     <span>Follow us on social for more updates, great recipies and more great coffee info</span>
                 </FooterHeading>
             <FooterArea>
