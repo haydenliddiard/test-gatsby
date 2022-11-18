@@ -7,19 +7,15 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
   setHtmlAttributes({ lang: "en" })
   setHeadComponents([
     <link 
-    key="staatliches"
+    key="Yellowtail"
     rel="preload"
-    href="/fonts/Staatliches-Regular.woff"
+    href="/fonts/Yellowtail-Regular.woff2"
     as="font"
-    type="font/woff"
+    type="font/woff2"
     crossOrigin='anonymous'
     />
   ])
 }
-
-// export const replaceRenderer = ({ setHtmlAttributes }) => {
-//   setHtmlAttributes({ lang: "en" })
-// }
 
 export const wrapPageElement = ({ element, props }) => (
       <>

@@ -5,7 +5,7 @@ import DualImageArea from "../components/DualImageArea/DualImageArea";
 import { ImageInsert } from "../components/ImageInsert/ImageInsert";
 import {Seo} from "../components/seo"
 import NewPageLinkArea from "../components/NewPageLinkArea/NewPageLinkArea";
-
+import Cta from "../components/Cta/Cta";
 
 const IndexPage = ({data}) => {
   const homeData = data.wpPage.Acfhomepage
@@ -13,6 +13,7 @@ const IndexPage = ({data}) => {
   return (
     <>
       <Hero />
+      <Cta />
       <DualImageArea />
       <ImageInsert>
         <h4>

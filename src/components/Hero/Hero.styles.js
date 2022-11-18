@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
   background-color: #323232;
   margin-bottom: 1em;
   background-image: url('${background}');
-  
+  width: 100%;
   img {
     width: 100%;
   }
@@ -65,14 +65,14 @@ export const MajorMessage = styled.div`
   width: 100%;
   left: 0;
   p {
+    font-family: "Yellowtail";
     background-image: url('${background}');
-    font-family: "staatliches";
     font-size: 1.2rem;
     font-weight: 100;
-    color: #fff;
+    color: #000;
     text-transform: none;
     text-align: center;
-    text-shadow: 1px 1px 2px rgb(0 0 0), 2px 2px 2px rgb(0 0 0);
+    
     z-index: 100;
     position: absolute;
     margin: 0;
@@ -98,6 +98,7 @@ export const MajorMessage = styled.div`
   @media screen and (min-width: 990px) {
     top: 3em;
     p {
+      font-family: "Yellowtail";
       position: initial;
       color: #fff;
       background: transparent;
@@ -109,7 +110,6 @@ export const MajorMessage = styled.div`
   }
   @media screen and (min-width: 1200px) {
     p {
-      color: #fff;
       background: transparent;
       line-height: .8;
       margin-left: 1.75em;
@@ -153,3 +153,4 @@ font-size: 1rem;
   margin-top: -8px;
 }
 `
+// text-shadow: 1px 1px 2px rgb(0 0 0), 2px 2px 2px rgb(0 0 0);

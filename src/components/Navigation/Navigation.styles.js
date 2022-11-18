@@ -19,7 +19,7 @@ export const Wrapper = styled.nav`
   }
 
   @media (min-width: 1200px) {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 
   ul li {

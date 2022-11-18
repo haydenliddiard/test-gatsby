@@ -11,7 +11,7 @@ const Layout = ({children}) => {
     const [menuOpen, setMenuOpen ] = useState(false);
     const HandleOverlayMenu = () => setMenuOpen(prev => !prev);
     const CloseMenu = () => setMenuOpen(false);
-    // on main:  Non-interactive elements should not be assigned mouse or keyboard event listeners
+    // onClick={CloseMenu}  throws warning should have tab index
     return (
         <>
         <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} />

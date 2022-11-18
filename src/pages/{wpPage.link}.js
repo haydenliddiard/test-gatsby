@@ -9,7 +9,7 @@ const pageTemplate = ({data}) => {
 
     return (
         <>
-            {imageData ? (<StyledImg image={imageData} alt="Hero Image" />) : (null)}
+            {imageData ? (<StyledImg image={imageData} alt="Hero Image" loading="eager"/>) : (null)}
             {/* <StyledImg image={imageData} alt="Hero Image" /> */}
             <h1>{data.wpPage.title}</h1>
             {/* <h2>{data.wpPage.genericPageAcf.pagetext}</h2> */}

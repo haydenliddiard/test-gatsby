@@ -17,6 +17,7 @@ const Hero = () => {
                 <HeaderWrapper>
                     <MajorMessage>
                         <p>"{data.herotext}"</p>
+                        {/* quality coffee to your door */}
                     </MajorMessage>
                 </HeaderWrapper>
                 <StyledImg image={imageData} loading="eager" alt="Hero Image" />
