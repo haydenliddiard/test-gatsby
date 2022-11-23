@@ -16,7 +16,7 @@ const Hero = () => {
             <Wrapper>
                 <HeaderWrapper>
                     <MajorMessage>
-                        <p>"{data.herotext}"</p>
+                        <p>{data.herotext}</p>
                         {/* quality coffee to your door */}
                     </MajorMessage>
                 </HeaderWrapper>

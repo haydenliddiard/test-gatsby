@@ -21,7 +21,7 @@ function Cta() {
         </div>
         </div>
         <div className='other-div'>
-            <h1>coffee brah</h1>
+            <h1>Premium Coffee</h1>
             <p>We here at one shot know two things. The first is we only have one shot to impress with our coffee, the second is that’s all we need. Our premium roasted is crafted with industry experts to get you the perfect cup and with enough flavors to make willy wonkas head spin you will be hooked after one shot.</p>
         </div>
     </Wrapper>

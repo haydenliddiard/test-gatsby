@@ -1,7 +1,7 @@
 import React from 'react'
 import {graphql} from 'gatsby'
 import { StyledImg } from '../pagehero.styles'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 function productTemplate({data}) {
   console.log(data)

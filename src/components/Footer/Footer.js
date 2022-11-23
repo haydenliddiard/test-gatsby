@@ -8,14 +8,11 @@ import {
     Wrapper
 } from "./Footer.styles";
 import Background from "../../images/coffee-light-texture.webp"
-import FooterLinks from "../FooterLinks/FooterLink";
+// import FooterLinks from "../FooterLinks/FooterLink";
 
 const Footer = () => {
 
     const {footQuery} = useFooterQuery();
-    // const socialLinks = Object.values(footQuery.footerMenu).length
-    // console.log(footQuery.length)
-    // console.log(socialLinks)
 
     return (
         <Wrapper style={{backgroundImage: `url(${Background})`}}>
@@ -32,7 +29,7 @@ const Footer = () => {
                 ))}
             </FooterArea>
             <h4>Check out our other Resoucres</h4>
-            <FooterLinks />
+            {/* <FooterLinks /> */}
         </Wrapper>
     )
 }

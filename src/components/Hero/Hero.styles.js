@@ -21,8 +21,8 @@ export const StyledImg = styled(GatsbyImage)`
   
 export const Wrapper = styled.div`
   position: relative;
-  background-color: #cc9966;
   background-color: #323232;
+  background-color: #cc9966;
   margin-bottom: 1em;
   background-image: url('${background}');
   width: 100%;
@@ -66,12 +66,16 @@ export const MajorMessage = styled.div`
   left: 0;
   p {
     font-family: "Yellowtail";
+    font-family: "Montserrat";
     background-image: url('${background}');
     font-size: 1.2rem;
     font-weight: 100;
     color: #000;
     text-transform: none;
     text-align: center;
+    ont-weight: bolder;
+    color: #fff;
+    text-shadow: 2px 3px #000, 3px 4px #000;
     
     z-index: 100;
     position: absolute;
@@ -94,11 +98,11 @@ export const MajorMessage = styled.div`
       font-size: 1.5rem;
     }
   }
-
+  
   @media screen and (min-width: 990px) {
     top: 3em;
     p {
-      font-family: "Yellowtail";
+      text-shadow: 2px 3px #000, 3px 4px #000;
       position: initial;
       color: #fff;
       background: transparent;
@@ -106,6 +110,9 @@ export const MajorMessage = styled.div`
       font-size: 3rem;
       line-height: .8 !important;
       margin-left: 1.5em;
+      &:after {
+        b
+      }
     }
   }
   @media screen and (min-width: 1200px) {
@@ -118,6 +125,10 @@ export const MajorMessage = styled.div`
   @media screen and (min-width: 1250px) {
     p {
       top: .7em;
+      background-color: #c96;
+      padding: 0.5em;
+      opacity: .5;
+      border: 4px solid #333333;
     }
   }
 `
@@ -131,7 +142,8 @@ color: #cc9966;
 margin-top: 3em; 
 font-weight: initial; 
 font-size: 1rem;
-
+font-family: "Montserrat";
+font-weight: 800;
 @media screen and (min-width: 330px) {
   margin-top: 42px;
 }

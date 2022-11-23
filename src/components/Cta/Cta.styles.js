@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import background from "../../images/asfault.png"
 
 export const Wrapper = styled.div`
 margin-bottom: 4em;
@@ -7,6 +8,7 @@ margin-bottom: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('${background}');
 
     .cta-message {
         margin: 1em 5%;
@@ -16,7 +18,10 @@ margin-bottom: 4em;
         p {
             width: 90%;
             font-family: 'Yellowtail';
-    font-size: 1.6em;
+            font-size: 1.2em;
+            border-top: 7px solid #000;
+            padding-top: 0.5em;
+            border-top-style: dotted;
         }
     }
 
@@ -81,28 +86,32 @@ margin-bottom: 4em;
 
 
     @media screen and (min-width: 1200px) {
-        display: flex;
         .cta-area {
-            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            flex-direction: column;
+            width: 100%;
             p {
-               width: 75%; 
+                width: 55%; 
+             }
+            .cta-message {
+                p {
+                    width: 50%;
+                }
             }
+        
             .cta-wrapper {
                 align-items: baseline;
-                background-color: #f7f0eb;
                 justify-content: center;
+                width: 88%;
                 a img {
                     max-width: 275px;
                 }
             }
-            
         }
         .other-div {
             margin: 0;
-            max-width: 50%;
             padding: 0;
             p {
                 width: 75%;
@@ -112,3 +121,36 @@ margin-bottom: 4em;
         }
     }
 `
+
+// @media screen and (min-width: 1200px) {
+//     display: flex;
+//     background-image: url('${background}');
+//     .cta-area {
+//         width: 50%;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         background-image: url('${background}');
+//         p {
+//            width: 75%; 
+//         }
+//         .cta-wrapper {
+//             align-items: baseline;
+//             justify-content: center;
+//             a img {
+//                 max-width: 275px;
+//             }
+//         }
+        
+//     }
+//     .other-div {
+//         margin: 0;
+//         max-width: 50%;
+//         padding: 0;
+//         p {
+//             width: 75%;
+//             text-align: left;
+//             display: inline-block;
+//         }
+//     }
+// }
