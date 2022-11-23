@@ -3,8 +3,8 @@ import {graphql} from 'gatsby'
 
 function product() {
   return (
-    <div>
-      <h1>product</h1>
+    <div style={{paddingTop: '3em'}}>
+      <h1>products</h1>
     </div>
   )
 }
@@ -12,7 +12,7 @@ function product() {
 export default product
 
 export const productQuery = graphql`
-    query MyQuery {
+    query AllProductsQuery {
     allWpProduct {
       edges {
         node {

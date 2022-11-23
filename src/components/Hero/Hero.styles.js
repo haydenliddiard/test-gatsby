@@ -8,17 +8,25 @@ export const StyledImg = styled(GatsbyImage)`
   margin-bottom: 30px;
   width: 125%;
   margin-bottom: 0;
-  margin-top: 3em;
+  margin-top: 3.5em;
   
   @media screen and (min-width: 330px) {
-    width: 100%;
+    width: 160%;
+    margin-left: -59%;
+    .gatsby-image-wrapper-constrained {
+      max-width: 160%;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    width: 140%;
+    margin-left: -40%;
   }
   @media screen and (min-width: 990px) {
-    width: 55%;
+    width: 100%;
+    margin-left: 0;
   }
   `
 
-  
 export const Wrapper = styled.div`
   position: relative;
   background-color: #323232;
@@ -29,9 +37,7 @@ export const Wrapper = styled.div`
   img {
     width: 100%;
   }
-  .gatsby-image-wrapper-constrained {
-    max-width: 100%;
-  }
+  
   @media screen and (min-width: 360px) {
     margin-bottom: 1.25em;
   }
@@ -105,19 +111,18 @@ export const MajorMessage = styled.div`
       text-shadow: 2px 3px #000, 3px 4px #000;
       position: initial;
       color: #fff;
-      background: transparent;
-      width: 28%;
-      font-size: 3rem;
+      width: 35%;
+      max-width: 310px;
+      font-size: 2rem;
+      padding: 0.5em 0;
       line-height: .8 !important;
       margin-left: 1.5em;
-      &:after {
-        b
-      }
+      background-color: #00000080;
+      border: 4px solid #333333;
     }
   }
   @media screen and (min-width: 1200px) {
     p {
-      background: transparent;
       line-height: .8;
       margin-left: 1.75em;
     }
@@ -125,10 +130,8 @@ export const MajorMessage = styled.div`
   @media screen and (min-width: 1250px) {
     p {
       top: .7em;
-      background-color: #c96;
       padding: 0.5em;
-      opacity: .5;
-      border: 4px solid #333333;
+      
     }
   }
 `

@@ -3,7 +3,7 @@ import {graphql, useStaticQuery } from "gatsby"
 export const useFooterMenuQuery = () => {
     const data = useStaticQuery( graphql`
     
-    query MyQuery {
+    query FooterLinks {
         wpMenu(name: {eq: "foot-area-links"}) {
             id
             name
