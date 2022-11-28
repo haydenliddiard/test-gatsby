@@ -12,11 +12,9 @@ const Layout = ({children}) => {
     const HandleOverlayMenu = () => setMenuOpen(prev => !prev);
     const CloseMenu = (e) => {
         if( menuOpen === true && e.target.parentNode !== 'overlay') {
-            alert('not overlay')
             setMenuOpen(false)
         }
     };
-    // onClick={CloseMenu}  throws warning should have tab index
     return (
         <>
         {/* <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} /> */}
