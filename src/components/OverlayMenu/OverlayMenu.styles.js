@@ -100,7 +100,7 @@ export const Overlay = styled.div`
       border-radius: 2px;
       width: 80%;
       max-width: 400px;
-      background-color: #993300;
+      background-color: #7a4917;
       transition: all .25s;
       :hover {
         background-color: #521d02;

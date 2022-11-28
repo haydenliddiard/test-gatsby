@@ -17,9 +17,9 @@ const Layout = ({children}) => {
         <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} />
         <OverlayMenu menuOpen={menuOpen} callback={HandleOverlayMenu}/>
         <Header/>
-        <div 
-        onClick={CloseMenu}
-        >{children}</div>
+        <div onClick={CloseMenu}>
+            {children}
+        </div>
         <ContributerArea />
         <Footer />
         </>

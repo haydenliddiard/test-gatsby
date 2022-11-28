@@ -7,6 +7,7 @@ export const Wrapper = styled.header`
   position: fixed;
   width: 100%;
   z-index: 10000;
+  box-shadow: 2px 2px 10px #313131;
 `;
 
 export const Content = styled.div`

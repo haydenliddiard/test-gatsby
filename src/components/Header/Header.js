@@ -4,10 +4,12 @@ import { useMenuQuery } from "../../hooks/useMenuQuery";
 import Navigation from "../Navigation/Navigation"
 import {Wrapper, Content} from './Header.styles'
 import logo from "../../images/one-shot-coffee2.svg"
+import Headroom from "react-headroom"
 
 const Header = () => {
     const {site, menu} = useMenuQuery()
     return (
+        <Headroom>
         <Wrapper>
             <Content>
             <Link to="/">
@@ -16,6 +18,7 @@ const Header = () => {
                 <Navigation menu={menu.menuItems.nodes}/>
             </Content>
         </Wrapper>
+        </Headroom>
     )
 }
 

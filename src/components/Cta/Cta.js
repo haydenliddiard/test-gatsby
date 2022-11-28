@@ -16,9 +16,6 @@ function Cta() {
             <img src={Cta1} loading="lazy" className="cta1" alt="img"   />
             </Link>
         </div>
-        <div className='cta-message'>
-            <p>We here at one shot know two things. The first is we only have one shot to impress with our coffee, the second is that’s all we need.</p>
-        </div>
         </div>
         <div className='other-div'>
             <h1>Premium Coffee</h1>

@@ -67,7 +67,6 @@ export const MajorMessage = styled.div`
   justify-content: initial;
   align-items: center;
   left: 1em;
-  bottom: -27px;
   width: 100%;
   left: 0;
   p {

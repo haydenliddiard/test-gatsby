@@ -6,6 +6,7 @@ import { ImageInsert } from "../components/ImageInsert/ImageInsert";
 import {Seo} from "../components/seo"
 import NewPageLinkArea from "../components/NewPageLinkArea/NewPageLinkArea";
 import Cta from "../components/Cta/Cta";
+import Mugs from "../components/Mugs/Mugs";
 
 const IndexPage = ({data}) => {
   const homeData = data.wpPage.Acfhomepage
@@ -20,6 +21,7 @@ const IndexPage = ({data}) => {
           {homeData.subtextarea}
         </h4>
       </ImageInsert>
+      <Mugs />
     <NewPageLinkArea />
 
 
