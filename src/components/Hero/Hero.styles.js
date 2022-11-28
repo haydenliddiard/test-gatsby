@@ -8,7 +8,7 @@ export const StyledImg = styled(GatsbyImage)`
   margin-bottom: 30px;
   width: 125%;
   margin-bottom: 0;
-  margin-top: 3.5em;
+  margin-top: 0;
   
   @media screen and (min-width: 330px) {
     width: 160%;
@@ -81,8 +81,6 @@ export const MajorMessage = styled.div`
     ont-weight: bolder;
     color: #fff;
     text-shadow: 2px 3px #000, 3px 4px #000;
-    
-    z-index: 100;
     position: absolute;
     margin: 0;
     padding: 0.25em 0;

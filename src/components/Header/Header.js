@@ -5,11 +5,14 @@ import Navigation from "../Navigation/Navigation"
 import {Wrapper, Content} from './Header.styles'
 import logo from "../../images/one-shot-coffee2.svg"
 import Headroom from "react-headroom"
-
-const Header = () => {
+import Hamburger from "../Hamburger/Hamburger";
+import OverlayMenu from "../OverlayMenu/OverlayMenu";
+const Header = ({HandleOverlayMenu, menuOpen}) => {
     const {site, menu} = useMenuQuery()
     return (
         <Headroom>
+        <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} />
+        <OverlayMenu menuOpen={menuOpen} callback={HandleOverlayMenu}/>
         <Wrapper>
             <Content>
             <Link to="/">

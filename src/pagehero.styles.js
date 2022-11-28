@@ -7,7 +7,7 @@ export const StyledImg = styled(GatsbyImage)`
   margin-bottom: 30px;
   width: 125%;
   margin-bottom: 2em;
-  margin-top: 3em;
+  margin-top: 0;
   margin-left: -12%;
   
   @media screen and (min-width: 330px) {

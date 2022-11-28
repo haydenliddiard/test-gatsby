@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Overlay = styled.div`
   width: 75%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   opacity: ${props => (props.menuOpen ? '1' : '0')};
   transform: ${props =>
