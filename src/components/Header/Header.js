@@ -10,9 +10,9 @@ import OverlayMenu from "../OverlayMenu/OverlayMenu";
 const Header = ({HandleOverlayMenu, menuOpen}) => {
     const {site, menu} = useMenuQuery()
     return (
-        <Headroom>
-        <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} />
+        <div>
         <OverlayMenu menuOpen={menuOpen} callback={HandleOverlayMenu}/>
+        <Headroom>
         <Wrapper>
             <Content>
             <Link to="/">
@@ -22,6 +22,7 @@ const Header = ({HandleOverlayMenu, menuOpen}) => {
             </Content>
         </Wrapper>
         </Headroom>
+        </div>
     )
 }
 

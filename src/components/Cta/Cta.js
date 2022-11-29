@@ -10,10 +10,10 @@ function Cta() {
       <div className='cta-area'>
         <div className='cta-wrapper'>
             <Link to="/our-roasts/">
-            <img src={Cta2} loading="lazy" className="cta2" alt="img"   />
+            <img src={Cta1} loading="lazy" className="cta1" alt="img"   />
             </Link>
             <Link to="/our-roasts/">
-            <img src={Cta1} loading="lazy" className="cta1" alt="img"   />
+            <img src={Cta2} loading="lazy" className="cta2" alt="img"   />
             </Link>
         </div>
         </div>

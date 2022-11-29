@@ -48,7 +48,6 @@ margin-bottom: 4em;
                 background: rgb(97,55,13);
                 background: linear-gradient(267deg,rgba(97,55,13,1) 0%,rgb(122 73 23) 58%,rgba(204,153,102,1) 100%);
                 background-size: 200%;
-                border: 3px solid #333;
                 transition: all .1s;
                 
                 &:hover {

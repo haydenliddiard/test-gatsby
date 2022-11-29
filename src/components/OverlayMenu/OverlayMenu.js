@@ -8,6 +8,7 @@ const OverlayMenu = ({menuOpen, callback}) => {
     const {menu} = useMenuQuery();
     return (
     <Overlay menuOpen={menuOpen} style={{backgroundImage: `url(${background})`,     backgroundBlendMode: 'multiply'}}>
+        
         <div className="inner">
         <ul className='overlayMenu'>
                 {menu?.menuItems.nodes.map(item => 
