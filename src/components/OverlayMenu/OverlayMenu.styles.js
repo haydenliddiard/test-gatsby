@@ -107,4 +107,45 @@ export const Overlay = styled.div`
       }
     }
   }
+
+
+  .fake-hamburger {
+    position: fixed;
+    right: 0.5em;
+    top: 1.25em;
+    right: 1.5em;
+
+    div {
+      border-radius: 2px;
+      padding: 2px;
+      width: 30px;
+      margin: 3px;
+      transition: all 0.6s;
+      background-color: #fff;
+    }
+    #one {
+      transform: rotate(0deg);
+      transform-origin: 100%;
+      opacity: ${props => (props.menuOpen ? '0' : '1')};
+    }
+    #two {
+      margin-top: 0;
+      margin-bottom: 0;
+      transform-origin: 100%;
+      transform: translateY(3px);
+      transform: ${props => (props.menuOpen ? 'rotate(-45deg) translateX(2px) translateY(-10px)' : 'rotate(0deg) translateX(0px) translateY(2px)')};
+    }
+    #three {
+      margin-top: 0;
+      margin-bottom: 0;
+      transform-origin: 100%;
+      transform: translateY(-4px);
+      transform: ${props => (props.menuOpen ? 'rotate(45deg) translateX(2px) translateY(10px)' : 'rotate(0deg) translateX(0px) translateY(-2px)')};
+    }
+    #four {
+      margin-bottom: 0;
+      transform-origin: 100%;
+      opacity: ${props => (props.menuOpen ? '0' : '1')};
+    }
+  }
 `;

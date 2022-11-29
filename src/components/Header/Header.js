@@ -6,14 +6,14 @@ import {Wrapper, Content} from './Header.styles'
 import logo from "../../images/one-shot-coffee2.svg"
 import Headroom from "react-headroom"
 import Hamburger from "../Hamburger/Hamburger";
-import OverlayMenu from "../OverlayMenu/OverlayMenu";
+
 const Header = ({HandleOverlayMenu, menuOpen}) => {
     const {site, menu} = useMenuQuery()
     return (
         <div>
-        <OverlayMenu menuOpen={menuOpen} callback={HandleOverlayMenu}/>
         <Headroom>
         <Wrapper>
+        <Hamburger menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu} /> 
             <Content>
             <Link to="/">
                 <img src={logo} alt={site.siteMetadata.title} />
