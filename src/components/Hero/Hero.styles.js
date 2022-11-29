@@ -70,8 +70,7 @@ export const MajorMessage = styled.div`
   width: 100%;
   left: 0;
   p {
-    font-family: "Yellowtail";
-    font-family: "Montserrat";
+    font-family: "BarlowCondensed";
     background-image: url('${background}');
     font-size: 1.2rem;
     font-weight: 100;
@@ -87,6 +86,10 @@ export const MajorMessage = styled.div`
     width: 100%;
     background-color: #cc9966;
     line-height: initial !important;  
+    font-size: 1.25rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
   @media screen and (min-width: 330px) {
     bottom: -16px;
@@ -101,21 +104,26 @@ export const MajorMessage = styled.div`
       font-size: 1.5rem;
     }
   }
-  
+
   @media screen and (min-width: 990px) {
-    top: 3em;
+    top: 2em;
+    bottom: 0;
     p {
+      font-family: "BarlowCondensed";
+      font-weight: 100;
+      letter-spacing: 0;
       text-shadow: 2px 3px #000, 3px 4px #000;
       position: initial;
       color: #fff;
       width: 35%;
       max-width: 310px;
-      font-size: 2rem;
+      font-size: 2.5rem;
       padding: 0.5em 0;
       line-height: .8 !important;
       margin-left: 1.5em;
       background-color: #00000080;
       border: 4px solid #333333;
+      z-index: 10;
     }
   }
   @media screen and (min-width: 1200px) {

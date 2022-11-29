@@ -7,13 +7,22 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
   setHtmlAttributes({ lang: "en" })
   setHeadComponents([
     <link 
-    key="Yellowtail"
+    key="BarlowCondensed"
     rel="preload"
-    href="/fonts/Yellowtail-Regular.woff2"
+    href="/fonts/BarlowCondensed-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossOrigin='anonymous'
+    />,
+    <link 
+    key="Montserrat"
+    rel="preload"
+    href="/fonts/Montserrat-MediumItallic.woff2"
     as="font"
     type="font/woff2"
     crossOrigin='anonymous'
     />
+
   ])
 }
 

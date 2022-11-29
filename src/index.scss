@@ -1,9 +1,4 @@
-@font-face {
-    font-family: staatliches;
-    font-weight: 100;
-    src: local('font-family: ui-monospace'), url(/fonts/Staatliches-Regular.woff) format('woff');
-    font-display: swap;
-}
+
 @font-face {
     font-family: Montserrat;
     font-weight: 100;
@@ -11,9 +6,9 @@
     font-display: swap;
 }
 @font-face {
-    font-family: Yellowtail;
+    font-family: BarlowCondensed;
     font-weight: 100;
-    src: local('font-family: ui-monospace'), url(/fonts/Yellowtail-Regular.woff2) format('woff2');
+    src: local('font-family: ui-monospace'), url(/fonts/BarlowCondensed-Light.woff2) format('woff2');
     font-display: swap;
 }
 main {
@@ -151,4 +146,8 @@ main {
         }
 
     }
+}
+
+.headroom {
+    z-index: 100 !important;
 }
