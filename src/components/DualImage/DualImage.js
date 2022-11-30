@@ -4,18 +4,21 @@ import {
     StyledImg,
     DualImg,
     DualImageTextWrapper,
-    DualImageText
+    DualImageText,
+    DualImgWrapper
 } from "./DualImage.styles"
 
 const DualImage = ({image, link, text}) => (
+    <DualImgWrapper>
     <DualImg>
         <StyledImg image={image} alt="cta Image"/>
-        <Link to={link}>
+    </DualImg>
+        <Link className="dualImageLink" to={link}>
             <DualImageTextWrapper>
                 <DualImageText>{text}</DualImageText>
             </DualImageTextWrapper>
         </Link>
-    </DualImg>
+    </DualImgWrapper>
 )
 
 export default DualImage

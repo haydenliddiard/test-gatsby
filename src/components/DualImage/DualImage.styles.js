@@ -9,6 +9,14 @@ export const StyledImg = styled(GatsbyImage)`
     position: static !important;
   }
 `
+export const DualImgWrapper = styled.div`
+  a {
+    display: inline-block;
+    margin-bottom: 2em;
+    text-align: center;
+    width: 100%;
+  }
+`
 
 export const DualImg = styled.div`
   margin-bottom: 20px;
@@ -24,26 +32,32 @@ export const DualImg = styled.div`
 
   @media (min-width: 768px) {
     max-height: 200px;
+    margin: 0 0.5em 20px 0.5em;
   }
 `
 
 export const DualImageTextWrapper = styled.div`
-  position: absolute;
   color: #fff;
   top: 0;
-  width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   background-color: rgb(0, 0, 0, .25);
-
+  padding: 0.25em 0.5em;
+  background: linear-gradient(267deg,rgba(97,55,13,1) 0%,rgb(122 73 23) 58%,rgba(204,153,102,1) 100%);
+  background-size: 200%;
+  border-radius: 2px;
+  max-width: 80%;
+  display: inline-block;
+  transition: all .1s;
+  
+  &:hover {
+    background-position: -100%;
+  }
 `
 
 export const DualImageText = styled.p`
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 2px 2px 4px rgb(0, 0, 0);
   font-family: "Teko";
+  font-family: "BarlowCondensed";
   font-weight: 700;
   letter-spacing: 1.5px;
   font-size: 1.3rem;
