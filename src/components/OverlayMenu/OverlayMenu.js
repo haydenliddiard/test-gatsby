@@ -8,7 +8,7 @@ const OverlayMenu = ({menuOpen, callback}) => {
     const {menu} = useMenuQuery();
     return (
     <Overlay menuOpen={menuOpen} style={{backgroundImage: `url(${background})`,     backgroundBlendMode: 'multiply'}}>
-        <div className="fake-hamburger" onClick={callback}>
+        <div className="fake-hamburger" onClick={callback} role="presentation">
             <div id="one"></div>
             <div id="two"></div>
             <div id="three"></div>
