@@ -35,8 +35,12 @@ const OverlayMenu = ({menuOpen, callback}) => {
             </div>
             
             <div className="overlay-cta">
-            <Link to={menu.ctaoverlay.overlayonelink}>{menu.ctaoverlay.overlayonetext}</Link>
-            <Link to={menu.ctaoverlay.overlaytwolink}>{menu.ctaoverlay.overlaytwotext}</Link>
+            <Link to={menu.ctaoverlay.overlayonelink}>
+                {menu.ctaoverlay.overlayonetext}
+            </Link>
+            <Link to={menu.ctaoverlay.overlaytwolink}>
+                {menu.ctaoverlay.overlaytwotext}
+            </Link>
             </div>
             </div>
     </Overlay>

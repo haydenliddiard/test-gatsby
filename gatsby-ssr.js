@@ -17,7 +17,7 @@ export const onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
     <link 
     key="Montserrat"
     rel="preload"
-    href="/fonts/Montserrat-MediumItallic.woff2"
+    href="/fonts/Montserrat-MediumItalic.woff2"
     as="font"
     type="font/woff2"
     crossOrigin='anonymous'
