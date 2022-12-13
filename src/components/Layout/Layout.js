@@ -15,10 +15,10 @@ const Layout = ({children}) => {
         }
     };
     return (
-        <main>
+        <main onClick={CloseMenu} role="presentation">
         <OverlayMenu menuOpen={menuOpen} callback={HandleOverlayMenu}/>
         <Header menuOpen={menuOpen} HandleOverlayMenu={HandleOverlayMenu}/>
-        <div onClick={CloseMenu} role="presentation">
+        <div >
             {children}
         </div>
         <ContributerArea />

@@ -10,25 +10,27 @@ export const StyledImg = styled(GatsbyImage)`
   }
 `
 export const DualImgWrapper = styled.div`
+text-align: center;
+position: relative;
   a {
     display: inline-block;
     margin-bottom: 2em;
     text-align: center;
     width: 100%;
+    max-width: 220px;
+    box-shadow: 0px 4px 5px #000;
+    left: 25%;
+    left: clamp(25%, 28%, 35%);
+    z-index: 1;
+    bottom: 1rem;
   }
 `
 
 export const DualImg = styled.div`
   margin-bottom: 20px;
-  max-height: 100px;
-  position: relative;
+  max-height: 150px;
   overflow: hidden;
   max-width: 100%;
-  
-  :hover img {
-    transform: scale(1.1);
-    filter: blur(2px);
-  }
 
   @media (min-width: 768px) {
     max-height: 200px;
@@ -45,8 +47,6 @@ export const DualImageTextWrapper = styled.div`
   background: linear-gradient(267deg,rgba(97,55,13,1) 0%,rgb(122 73 23) 58%,rgba(204,153,102,1) 100%);
   background-size: 200%;
   border-radius: 2px;
-  max-width: 80%;
-  display: inline-block;
   transition: all .1s;
   
   &:hover {

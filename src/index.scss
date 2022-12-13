@@ -14,6 +14,7 @@
 main {
     overflow: hidden;
 }
+
 .worpress-page-container {
     margin: 3em 5%;
     display: flex;
@@ -150,4 +151,24 @@ main {
 
 .headroom {
     z-index: 100 !important;
+}
+
+.left-img-pattern {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    figure {
+        max-width: 400px;
+    }
+    .wp-block-media-text__content {
+        width: 55%;
+        padding: 0 5%;
+        text-align: center;
+        p {
+            text-align: left;
+        }
+    }
+    @media screen and (min-width: 920px) {
+        flex-direction: row;
+    }
 }

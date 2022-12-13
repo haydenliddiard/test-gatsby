@@ -6,7 +6,8 @@ import { ImageInsert } from "../components/ImageInsert/ImageInsert";
 import {Seo} from "../components/seo"
 import NewPageLinkArea from "../components/NewPageLinkArea/NewPageLinkArea";
 import Cta from "../components/Cta/Cta";
-import Mugs from "../components/Mugs/Mugs";
+import MugArea from "../components/Mugs/MugArea";
+import AllCoffee from "../components/AllCoffee/AllCoffee";
 
 const IndexPage = ({data}) => {
   const homeData = data.wpPage.Acfhomepage
@@ -16,12 +17,13 @@ const IndexPage = ({data}) => {
       <Hero />
       <Cta />
       <DualImageArea />
+      <AllCoffee />
       <ImageInsert>
         <h4>
           {homeData.subtextarea}
         </h4>
       </ImageInsert>
-      <Mugs />
+      <MugArea />
     <NewPageLinkArea />
 
 
