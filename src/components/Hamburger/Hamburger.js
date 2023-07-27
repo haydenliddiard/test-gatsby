@@ -1,10 +1,10 @@
+// Empty div that triggers OverlayMenu: menuOpen/HandleOverlayMenu defined in Layout
 import React from "react";
 import {HamburgerButton} from "./Hamburger.styles"
 // import icon from "../../images/hamburger.svg"
 
-// changed presentational component to cuntional
+// changed presentational component to funtional
 const Hamburger = ({HandleOverlayMenu, menuOpen}) => {
-
 
     return (
     <HamburgerButton onClick={HandleOverlayMenu} menuOpen={menuOpen}>

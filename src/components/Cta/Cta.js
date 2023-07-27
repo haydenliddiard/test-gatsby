@@ -9,7 +9,7 @@ function Cta() {
     <Wrapper>
       <div className='cta-area'>
         <div className='cta-wrapper'>
-            <Link to="/our-roasts/">
+            <Link to="/coffees/">
             <img src={Cta1} loading="lazy" className="cta1" alt="img"   />
             </Link>
             <Link to="/our-roasts/">

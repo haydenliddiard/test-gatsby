@@ -6,7 +6,7 @@ export const useDualImgCtaQuery = () => {
     fragment dualImage on WpMediaItem {
         localFile {
           childImageSharp {
-            gatsbyImageData(width: 600, placeholder: TRACED_SVG)
+            gatsbyImageData(width: 600, placeholder: DOMINANT_COLOR)
           }
         }
       }

@@ -1,3 +1,4 @@
+// menuOpen=state callback=HandleOverlayMenu: called in from Layout
 import React from "react";
 import { Link } from "gatsby";
 import { Overlay } from "./OverlayMenu.styles";

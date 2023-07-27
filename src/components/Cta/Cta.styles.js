@@ -2,8 +2,9 @@ import styled from "styled-components"
 import background from "../../images/asfault.png"
 
 export const Wrapper = styled.div`
-margin-bottom: 4em;
+margin-bottom: 2em;
 .cta-area {
+    margin-bottom: 2em;
     background-color: #f7f0eb;
     display: flex;
     flex-direction: column;
@@ -29,7 +30,7 @@ margin-bottom: 4em;
         display: block;
         display: flex;
         justify-content: center;
-        padding: 1em 0;
+        padding: 2em 0;
         flex-direction: column;
         align-items: center;
         
@@ -44,9 +45,11 @@ margin-bottom: 4em;
                 padding-top: 0.2em;
                 margin: 0 0.5em;
                 border-radius: 3px;
+                box-shadow: 0px 5px 9px #666;
                 background: rgb(239,239,239);
                 background: rgb(97,55,13);
                 background: linear-gradient(267deg,rgba(97,55,13,1) 0%,rgb(122 73 23) 58%,rgba(204,153,102,1) 100%);
+                
                 background-size: 200%;
                 transition: all .1s;
                 
@@ -60,12 +63,13 @@ margin-bottom: 4em;
 }
     
     .other-div {
-        margin: 1em 5% 3em 5%;
+        @mixin centered-text-width{ max-width: 45%};
+        margin: 1em 5% 2em 5%;
         display: flex;
         flex-direction: column;
         align-items: center;
         p {
-            max-width: 90%;
+            max-width: $centered-text-width;
             text-align: left;
         }
     }

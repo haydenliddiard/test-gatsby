@@ -4,19 +4,36 @@ import {
     StyledImg,
     Wrapper,
     Card,
-} from '../pageStyled/CoffeePage.styles'
+} from '../pageStyled/product-area-page.styles'
 import Cart from '../images/shopping-cart-white.png'
 import View from '../images/coffee-bag.svg'
+import { motion } from "framer-motion"
 
 const coffeePage = ({data}) => {
 
     const coffeeData = data.allWpCoffee
     console.log(coffeeData)
   return (
+    <motion.main
+                    initial={{ opacity: 0, x: -600 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 600 }}
+                    transition={{
+                        type: "spring",
+                        mass: 0.35,
+                        stiffness: 75,
+                        duration: 0.3,
+                        delay: 0.5,
+                        
+                    }}
+                    >
     <Wrapper>
         <h1 style={{textAlign: 'center', marginTop: '2rem'}}>Premium coffee</h1>
-        <article>We here at one shot know two things. The first is we only have one shot to impress with our coffee, the second is that’s all we need. Our premium roasted is crafted with industry experts to get you the perfect cup and with enough flavors to make willy wonkas head spin you will be hooked after one shot.</article>
-        <div className='coffee-card-area'>
+
+    <div className='centered-text'>
+        <p >We here at one shot know two things. The first is we only have one shot to impress with our coffee, the second is that’s all we need. Our premium roasted is crafted with industry experts to get you the perfect cup and with enough flavors to make willy wonkas head spin you will be hooked after one shot.</p>
+    </div>
+        <div className='card-area'>
         {coffeeData.edges.reverse().map((elem, i) => {
                 return (
                     <Card key={elem.node.id}>
@@ -26,14 +43,6 @@ const coffeePage = ({data}) => {
                         </div>
 
                         <div className='excerpt-info'>
-                        {/* <div className='weight'>Flavor: 
-                            <span>{elem.node.customCoffeePost.flavor1},</span>
-                            <span>{elem.node.customCoffeePost.flavor2},</span>
-                            <span>{elem.node.customCoffeePost.flavor3}</span>
-                        </div>
-                        <div className='weight'>Weight: 
-                            <span> 12 Oz</span>
-                        </div> */}
                             <div className="description" dangerouslySetInnerHTML={{__html: elem.node.excerpt.substring(0, 50) + '...'} } />
                         </div>
                         
@@ -44,6 +53,7 @@ const coffeePage = ({data}) => {
             })}
         </div>
     </Wrapper>
+    </motion.main>
   )
 }
 

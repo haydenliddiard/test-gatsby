@@ -12,7 +12,7 @@ const MugArea = () => {
         <div>
             {allWpMug.edges.reverse().map((elem, i) => {
                 return (
-                    <span>{elem.node.title}</span>
+                    <span key={i}>{elem.node.title}</span>
                 )
             })}
         </div>

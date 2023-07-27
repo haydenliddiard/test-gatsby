@@ -7,7 +7,8 @@ import {Seo} from "../components/seo"
 import NewPageLinkArea from "../components/NewPageLinkArea/NewPageLinkArea";
 import Cta from "../components/Cta/Cta";
 import MugArea from "../components/Mugs/MugArea";
-import AllCoffee from "../components/AllCoffee/AllCoffee";
+// import AllCoffee from "../components/AllCoffee/AllCoffee";
+import { motion } from "framer-motion"
 
 const IndexPage = ({data}) => {
   const homeData = data.wpPage.Acfhomepage
@@ -15,9 +16,23 @@ const IndexPage = ({data}) => {
   return (
     <>
       <Hero />
+      <motion.main
+                    initial={{ opacity: 0, x: -600 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 600 }}
+                    transition={{
+                        type: "spring",
+                        mass: 0.35,
+                        stiffness: 75,
+                        duration: 0.3,
+                        delay: 0.5,
+                        
+                    }}
+                    >
       <Cta />
+      </motion.main>
       <DualImageArea />
-      <AllCoffee />
+      {/* <AllCoffee /> */}
       <ImageInsert>
         <h4>
           {homeData.subtextarea}

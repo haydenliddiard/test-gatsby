@@ -6,7 +6,7 @@ export const useContributersQuery = () => {
     fragment contributerImage on WpMediaItem {
         localFile {
           childImageSharp {
-            gatsbyImageData(width: 300, placeholder: TRACED_SVG)
+            gatsbyImageData(width: 300, placeholder: DOMINANT_COLOR)
           }
         }
       }

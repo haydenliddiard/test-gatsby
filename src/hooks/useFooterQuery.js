@@ -6,7 +6,7 @@ export const useFooterQuery = () => {
     fragment linkImage on WpMediaItem {
             localFile {
             childImageSharp {
-                gatsbyImageData(width: 30, placeholder: TRACED_SVG)
+                gatsbyImageData(width: 30, placeholder: DOMINANT_COLOR)
             }
             }
         }

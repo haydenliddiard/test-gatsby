@@ -10,9 +10,12 @@ export const StyledImg = styled(GatsbyImage)`
   }
 `
 export const DualImgWrapper = styled.div`
-text-align: center;
-position: relative;
+  text-align: center;
+  position: relative;
+  max-width: 399px;
+  display: inline-block;
   a {
+    position: absolute;
     display: inline-block;
     margin-bottom: 2em;
     text-align: center;
@@ -20,9 +23,10 @@ position: relative;
     max-width: 220px;
     box-shadow: 0px 4px 5px #000;
     left: 25%;
-    left: clamp(25%, 28%, 35%);
+    left: clamp(22%, 22%, 35%);
     z-index: 1;
     bottom: 1rem;
+    border: 2px solid #fff;
   }
 `
 
@@ -66,7 +70,7 @@ export const DualImageText = styled.p`
   padding: 0px;
 
   @media (min-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   @media (min-width: 992px) {

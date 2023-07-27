@@ -1,3 +1,4 @@
+// For displaying 3 newset posts links
 import React from "react";
 import { useNewPagesQuery } from "../../hooks/useNewPagesQuery";
 import NewPageLinks from "../NewPageLinks/NewPageLinks"

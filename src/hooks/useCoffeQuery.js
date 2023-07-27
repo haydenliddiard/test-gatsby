@@ -9,6 +9,19 @@ export const useCoffeeQuery = () => {
                         slug
                         uri
                         title
+                        excerpt
+                        customCoffeePost {
+                            flavor1
+                            flavor2
+                            flavor3
+                            coffeLinkImage {
+                                localFile {
+                                    childImageSharp {
+                                        gatsbyImageData(placeholder: DOMINANT_COLOR, width: 600)
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

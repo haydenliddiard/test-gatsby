@@ -27,7 +27,7 @@ export const useNewPagesQuery = () => {
                             pageLinkImage {
                                 localFile {
                                 childImageSharp {
-                                    gatsbyImageData(placeholder: TRACED_SVG, width: 600)
+                                    gatsbyImageData(placeholder: DOMINANT_COLOR, width: 600)
                                 }
                                 }
                             }

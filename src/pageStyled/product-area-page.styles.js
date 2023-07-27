@@ -15,14 +15,13 @@ export const Wrapper = styled.div`
     display: block;
     width: 100%;
     text-align: center;
-    .coffee-card-area {
+    .card-area {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
         margin-bottom: 2em;
     }
-    
     
     @media screen and (min-width: 920px) {
         .coffee-card-area {
@@ -80,13 +79,6 @@ export const Card = styled.div`
             font-weight: 600;
             margin-bottom: .5em;
         }
-        thead {
-            font-weight: 700;
-        }
-        table tr {
-            font-size: .8rem;
-            line-height: 1.5;
-        }
         .weight {
             font-size: .8rem;
             font-weight: 600;
@@ -132,7 +124,8 @@ export const Card = styled.div`
     .view-product {
         background: linear-gradient(180deg,rgb(255 255 255) 0%,rgb(199 199 199) 98%, rgb(144,144,144)100%);
         &:hover {
-            
+            background: #ccc;
+            box-shadow: inset 0 1px 5px #333;
         }
     }
 `
